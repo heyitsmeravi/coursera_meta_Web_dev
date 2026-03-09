@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+</head>
+<body>
+    <h1>Book A Table</h1>
+    <form action="POST">
+        <div>
+            <label for="booking_date">Booking Date</label>
+            <input type="date" name="booking_date" id="booking_date">
+        </div>
+        <div>
+            <label for="booking_size">Number of People</label>
+            <input type="range" name="booking_size" id="booking_size" min="4" max="10" oninput="this.nextElementSibling.value=this.value">
+            <output>4</output>
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input name="booking_location" id="location" list="locations">
+            <datalist id="locations">
+                <option value="Downtown"></option>
+                <option value="Green Park"></option>
+                <option value="Valley"></option>
+                <option value="Mountain"></option>
+                <option value="Hill Mountain"></option>
+                <option value="Ever Mountain"></option>
+            </datalist> <br>
+            <label for="district">City</label>
+            <select name="district" id="district" size="1" multiple>
+            <option value="gaya">Gaya</option>
+            <option value="Bodhgaya">Bodhgaya</option>
+            <option value="Samastipur">Samastipur</option>
+            <option value="Nalanda">Nalanda</option>
+            <option value="gaya">Gaya</option>
+            <option value="Bodhgaya">Bodhgaya</option>
+            <option value="Samastipur">Samastipur</option>
+            <option value="Nalanda">Nalanda</option>
+            <option value="gaya">Gaya</option>
+            <option value="Bodhgaya">Bodhgaya</option>
+            <option value="Samastipur">Samastipur</option>
+            <option value="Nalanda">Nalanda</option>
+            <option value="gaya">Gaya</option>
+            <option value="Bodhgaya">Bodhgaya</option>
+            <option value="Samastipur">Samastipur</option>
+            <option value="Nalanda">Nalanda</option>
+            </select>
+            
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

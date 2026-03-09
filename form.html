@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    <form action="POST">
+        <fieldset id="size">
+            <input type="radio" value="2" name="size" id="2"> <label for="2">2-Person Table</label> 
+            <label> <input type="radio" value="3" name="size"> 3-Person Table</label>
+            <label> <input type="radio" value="4" name="size"> 4-Person Table</label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" name="ind" id="location-in">
+            <label for="location-in">Indoor</label>
+            <input type="radio" name="ind" id="location-out">
+            <label for="location-out">Outdoor</label> <br>
+            <label for="gallery">Select File</label>
+            <input type="file" id="gallery" name="gallery" multiple> <br>
+            <label for="phone">Phone</label> 
+            <input type="tel" id="phone" name="phone" id="phone" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$” >
+            <input type="reset">
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
