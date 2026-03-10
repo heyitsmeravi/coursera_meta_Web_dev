@@ -1,0 +1,21 @@
+.container{
+    display: inline-flex;
+    flex:1 1 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#searchBox{
+    border: 0;
+    flex:1;
+    font-weight: 400;
+}
+#searchBtn{
+    background:blue;
+    border-radius: 8px;
+    padding: 2rem;
+    border: 0;
+    font-weight: 400;
+}
+#icon{
+    padding:2rem;
+}
