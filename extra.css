@@ -1,0 +1,20 @@
+body{
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    background-color: #2C3333;
+    padding: 2em;
+    text-align: center;
+}
+main{
+    padding:2em;
+    text-align: center;
+    background-color: #395B64;
+}
+footer{
+    padding: 2em;
+    text-align: center;
+    background-color:#A5C9CA ;
+}
